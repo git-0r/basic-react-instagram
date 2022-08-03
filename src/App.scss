@@ -1,0 +1,17 @@
+@import "~bootstrap/scss/bootstrap";
+
+:root {
+  font-size: 14px;
+}
+
+@mixin small {
+  @media (min-width: 768px) { @content; }
+}
+
+@mixin large {
+  @media (min-width: 1240px) { @content; }
+}
+
+@mixin extra-large {
+  @media (min-width: 1800px) { @content; }
+}

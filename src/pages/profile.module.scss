@@ -1,0 +1,72 @@
+.profile_header {
+  display: flex;
+  padding: 3rem;
+  gap: 5rem;
+  border-bottom: 1px solid rgb(200, 200, 200);
+
+  & img {
+    border-radius: 50%;
+    // width: 75px;
+    // height: 75px;
+  }
+
+  & .nickname {
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 0;
+  }
+
+  & .account_options {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    & button {
+      background-color: transparent;
+      border: none;
+    }
+
+    & a {
+      text-decoration: none;
+      color: initial;
+      border: 1px solid rgb(200, 200, 200);
+      padding: 0.3rem 0.6rem;
+      border-radius: 0.3rem;
+      font-weight: 400;
+    }
+  }
+
+  & .account_stats {
+    display: flex;
+    gap: 3rem;
+    margin: 1rem 0;
+
+    & span {
+        font-weight: 600;
+    }
+  }
+
+  & .user_name {
+    margin: 0;
+    font-weight: 500;
+  }
+}
+
+.main_container {
+  max-width: 978px;
+  margin: 0 auto;
+}
+
+.post_options {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+
+    & a {
+        padding: 2rem 0;
+        text-decoration: none;
+        color: initial;
+    }
+}

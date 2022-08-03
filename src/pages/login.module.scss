@@ -1,0 +1,102 @@
+body {
+  background-color: whitesmoke;
+}
+
+.container {
+  max-width: 375px;
+  margin: 3rem auto;
+}
+
+.form_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(220, 220, 220);
+  padding: 3rem 3rem 0.5rem 3rem;
+  background-color: white;
+}
+
+.separator {
+  width: 100%;
+  height: 1px;
+  background-color: rgb(220, 220, 220);
+  margin: 2rem 0;
+  text-align: center;
+  color: gray;
+  font-weight: 500;
+}
+
+.separator_text {
+  position: relative;
+  top: -12px;
+  background-color: white;
+  padding: 1rem;
+}
+
+.insta_logo {
+  width: 60%;
+  margin-bottom: 2.5rem;
+}
+
+.fb_login_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 0.5rem;
+  background-color: transparent;
+  color: initial;
+  border: transparent;
+  margin-bottom: 0.5rem;
+
+  & span {
+    color: rgba(66, 103, 178, 1);
+    font-weight: 600;
+  }
+
+  &:focus,
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+.signup_link_wrapper {
+  margin: 1rem 0;
+  border: 1px solid rgb(220, 220, 220);
+  padding: 1.7rem;
+  background-color: white;
+
+  & p {
+    margin: 0;
+    text-align: center;
+
+    & a {
+      text-decoration: none;
+      font-weight: 500;
+    }
+  }
+}
+
+.get_app {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.app_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  max-height: 50px;
+
+  & img {
+    width: 40%;
+  }
+}
+
+.forgot_password {
+  font-size: 0.85rem;
+  text-decoration: none;
+  color:rgb(1,55,106);
+}

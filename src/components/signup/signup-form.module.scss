@@ -1,0 +1,22 @@
+.signup_form {
+  width: 100%;
+
+  & input {
+    background-color: rgb(250,250,250);
+    padding: 0.5rem 1rem;
+  }
+
+  & .tnc {
+    text-align: center;
+    font-size: 0.85rem;
+    color: rgb(130,130,130);
+  }
+
+  & .tnc_emphasis {
+    font-weight: 600;
+  }
+}
+
+.signup_button {
+  width: 100%;
+}

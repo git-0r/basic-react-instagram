@@ -1,0 +1,133 @@
+.home_wrapper {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+
+  & .left_section {
+    flex: 6;
+  }
+
+  & .right_section {
+    flex: 4;
+
+    & .user_info {
+      display: flex;
+      gap: 1rem;
+      justify-content: space-between;
+      align-items: center;
+      margin: 2rem 0;
+      max-width: 20vw;
+
+      & p {
+        margin: 0;
+      }
+
+      & .image_wrapper {
+        flex: 1;
+        & img {
+          width: 60px;
+          border-radius: 50%;
+        }
+      }
+
+      & .account_switch {
+        color: rgb(0, 149, 246);
+        font-weight: 600;
+        font-size: 0.8rem;
+        flex: 1;
+        text-align: right;
+      }
+
+      & .nickname_wrapper {
+        flex: 4;
+
+        & p {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    & .suggestions_header {
+      display: flex;
+      justify-content: space-between;
+      max-width: 20vw;
+
+      & p:first-of-type {
+        color: rgb(150, 150, 150);
+        font-weight: 600;
+      }
+
+      & p:last-of-type {
+        font-weight: 500;
+      }
+    }
+
+    & .suggestions_wrapper {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      margin: 1rem 0;
+      max-width: 20vw;
+
+      & .image_wrapper {
+        flex: 1;
+
+        & img {
+            width: 40px;
+            border-radius: 50%;
+        }
+      }
+
+      & .follow_switch {
+        color: rgb(0, 149, 246);
+        flex: 1;
+        font-weight: 500;
+        cursor: pointer;
+
+        & p{
+            margin: 0;
+        }
+      }
+
+      & .nickname_wrapper {
+        flex: 4;
+
+        & p {
+            margin: 0;
+            color: black;
+            font-weight: 500;
+        }
+
+        & span {
+            color: rgb(150, 150, 150);
+            font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
+
+.links {
+    display: flex;
+    column-gap: 1.2rem;
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+    max-width: 20vw;
+    padding-left: 0;
+    align-items: center;
+    color: rgb(150, 150, 150);
+    margin-top: 2rem;
+
+    & li:first-of-type {
+        list-style: none;
+    }
+}
+
+.meta_copy {
+    color: rgb(150, 150, 150);
+    font-size: 0.8rem;
+}
+
+.ref_element {
+    height: 10px;
+}

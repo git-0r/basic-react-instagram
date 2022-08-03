@@ -1,0 +1,143 @@
+.post {
+  max-width: 40vw;
+  border: 1px solid rgb(200, 200, 200, 0.5);
+  margin: 2rem;
+  margin-left: auto;
+}
+.post_header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+
+  & .avatar_wrapper,
+  & .options_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  & .avatar_wrapper {
+    flex: 1;
+
+    & .avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+  }
+
+  & .nickname_wrapper {
+    flex: 4;
+
+    & p {
+      margin: 0;
+    }
+
+    & p:first-of-type {
+      font-weight: 700;
+    }
+
+    & p:last-of-type {
+      font-size: 0.8rem;
+    }
+  }
+
+  & .options_wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.content_wrapper {
+  & img {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  & video {
+    width: 100%;
+  }
+}
+
+.icons_wrapper {
+  display: flex;
+  width: calc(100% - 2rem);
+  margin: 1rem;
+
+  & .left_icons {
+    flex: 5;
+    display: flex;
+    gap: 1rem;
+  }
+
+  & .right_icons {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.likes_count {
+    margin: auto 1rem;
+    font-weight: 600;
+}
+
+.caption_wrapper {
+    margin: auto 1rem;
+
+    & .nickname {
+        font-weight: 700;
+    }
+}
+
+.comments_count {
+    color:rgb(160, 160, 160);
+    margin: auto 1rem;
+}
+
+.created_at {
+    font-size: 0.8rem;
+    color:rgb(160, 160, 160);
+    margin: auto 1rem;
+}
+
+.comment_box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-top: 1px solid rgb(200, 200, 200, 0.5);
+
+    & .emoji_wrapper {
+        flex: 0.5;
+    }
+
+    & .comment_form {
+        flex: 5.5;
+        display: flex;
+        width: 100%;
+
+        & input {
+            flex: 5.5;
+            border: transparent;
+            background-color: inherit;
+
+            &:focus {
+                outline: transparent;
+            }
+        }
+
+        & button {
+            flex: 0.5;
+            background-color: transparent;
+            border: transparent;
+            color: rgb(0,149,246);
+            font-weight: 500;
+
+            &:disabled {
+                color: rgb(0,149,246, 0.5);
+            }
+        }
+    }
+}
